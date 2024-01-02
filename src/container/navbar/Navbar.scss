@@ -1,0 +1,118 @@
+.navbar {
+  height: 5rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: rgba(30,30,30);
+  
+
+  .navbar-logo {
+    margin-bottom: 3rem;
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+
+    .logo {
+      height: 6rem;
+    }
+  }
+  .navbar-menu {
+    margin-top: 0rem;
+    @media screen and (max-width:1200px) {
+      display: none;
+    }
+    .deskopmenuListitem{
+      margin: 1rem;
+      padding: 2rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: rgb(120, 117, 117);
+      transition: font-size 0.5s ease-in-out;
+      &:hover {
+        font-size: 1.8rem;
+        color: yellow;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid yellow;
+      }
+    }
+    .active{
+      margin: 1rem;
+      padding: 2rem;
+      font-weight: 600;
+        font-size: 1.8rem;
+        color: yellow;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid yellow;
+    }
+  }
+  .navbar-contactme {
+    margin-top: 0rem;
+    height: 3rem;
+    width: 12rem;
+    background-color: rgb(240, 238, 238);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: font-size 0.5s ease-in-out;
+    &:hover {
+      background-color: yellow;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    @media screen and (max-width:1200px) {
+      display: none;
+    }
+  }
+}
+
+.mob_menu_logo{
+  display: none;
+  @media screen and (max-width:1200px) {
+    display: flex;
+  }
+  .menu_logo{
+    height: 2rem;
+    width: 2rem;
+  }
+}
+.mob_menu{
+  position: absolute;
+  top:4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-width: 10rem;
+  margin-top:2rem;
+  background-color: rgba(40,40,40);
+  border-radius: 1rem;
+  .menu_item{
+    margin: 0.25rem;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(120, 117, 117);
+    background-color: rgba(30,30,30);
+    transition: font-size 0.5s ease-in-out;
+
+    &:hover {
+      font-size: 1.8rem;
+      color: yellow;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid yellow;
+    }
+  }
+}
