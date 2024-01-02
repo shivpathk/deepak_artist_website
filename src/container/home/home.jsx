@@ -20,7 +20,7 @@ const home = () => {
           <p className="intro-para">
             I am a profesional Sketch Artist, who creates very detailed and
             realastic sketches of random peoples at very affordable price. I am
-            in this profetion from last 6 years and delivered more that 500 sketches. You can contact me if you want a very beautiful potrait of yours or of your loved ones, trust me you will amazed by my work.
+            in this Profession from last 6 years and delivered more that 500 sketches. You can contact me if you want a very beautiful potrait of yours or of your loved ones, trust me you will amazed by my work.
           </p>
 
           <Link className="btn"
